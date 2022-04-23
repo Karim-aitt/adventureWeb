@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Web</title>
+
+<!-- Boostrap 5 y Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/727f593aef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    
+</head>
+<body>
+    
+    <div 
+    class="
+    container-fluid 
+    col-8 
+    border
+    rounded
+    border-4
+    border-dark
+    my-4
+    " 
+    style="background-color:  #E9EFC0;">
+
+        <h1 
+        class="
+        text-center
+        border
+        rounded
+        border-2
+        border-dark
+        my-3
+        p-1
+        
+        "
+        style="background-color: white ;"
+        >Adventure Web Game</h1>
+        
+        <!-- MODAL -->
+        <div id="cajaInicio">
+        <button type="button" class="btn-lg btn-success d-flex mx-auto my-3" data-bs-toggle="modal" data-bs-target="#inicio">
+            INICIO
+          </button>
+        </div>
+        <div 
+        id="inicio" 
+        class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">¿De que trata este juego?</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Estamos en una época medieval fantástica, eres un caballero
+                    que se rige por un noble código de honor y conducta, recorres el
+                    mundo en ayuda del necesitado y en defensa del débil.
+                    <br>
+                    <br>
+                    ¿Conseguirás mantenerte fiel al código de honor y ser un digno ejemplo?
+                </p>
+                </div>
+                <div class="modal-footer">
+                  <button id="botonCerrar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- FIN MODAL -->
+
+        <!-- display none oculta la caja al principio del juego -->
+        <div 
+        id="cajaAventura"
+        style="display: none;"
+        class="
+        text-center
+        ">
+            <p id="textoAventura">
+                
+                Te encuentras recorriendo un sinuoso camino que atraviesa un bosque en dirección 
+                al festival de caballeria de la ciudad de ColinaVerde cuando de repente escuchas
+                gritos a lo lejos.
+                <br>
+                <br>
+                <strong>¿Qué haces?</strong>
+                <br>
+                <strong>1</strong> Voy hacia los gritos rápidamente
+                <br>
+                <strong>2</strong> Voy hacia los gritos silenciosamente
+                <br>
+                <strong>3</strong> Sigo mi camino hacia el festival
+                
+            </p>
+
+        
+
+        <div
+        id="cajaBotones"
+        class="
+        border
+        rounded
+        text-center 
+        d-flex 
+        
+        container-fluid
+        mx-auto 
+        m-3
+        p-3
+        "
+        style="background-color: #83BD75;"
+        >
+    
+            <button 
+            id="button1" 
+            class="
+            boto
+            btn 
+            btn-sm 
+            btn-primary 
+            border-dark 
+            border-2 
+            col-3  
+            my-2
+            ">
+                <strong>
+                    1
+                </strong>
+            </button>
+
+            
+            <button 
+            id="button2" 
+            class="
+            boto
+            btn 
+            btn-sm 
+            btn-primary 
+            border-dark 
+            border-2 
+            col-3  
+            my-2
+            mx-auto
+            ">
+                <strong>
+                    2
+                </strong>
+            </button>
+
+            
+            <button 
+            id="button3" 
+            class="
+            boto
+            btn 
+            btn-sm 
+            btn-primary 
+            border-dark 
+            border-2 
+            col-3  
+            my-2
+            ">
+                <strong>
+                    3
+                </strong>
+            </button>
+        </div>
+
+        <button 
+        id="butonEnd" 
+        style="display: none;"
+        class="
+        btn-lg 
+        btn-success 
+        m-2
+        mx-auto
+        ">
+        Refresh
+        </button>
+
+    </div>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
