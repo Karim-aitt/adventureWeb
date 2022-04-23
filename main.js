@@ -155,6 +155,18 @@ boton2.addEventListener("click", function (){
         }) //end boton 1 1 3
     })
 
+    document.getElementById("button21").addEventListener("click", function (){
+
+        textoInicio.innerHTML = "¿Hey chicos, que tal si nos repartimos ese botín que tiene el burro? No me gustaría tener que cortaros la cabeza. <br><br>-- Los hombres te miran extrañados y asienten mirandose entre sí -- <br><br> Te acercas a ellos dispuesto a coger el burro pero antes de que puedas hacerlo notas algo que no te deja moverte, al mirar hacia abajo ves que una punta afilada de lanza te atraviesa el pecho... <br><br><strong>GAME OVER</strong>"
+
+        document.getElementById("cajaBotones").style="visibility: hidden;"
+
+        document.getElementById("butonEnd").style="display: inherit"
+            document.getElementById("butonEnd").addEventListener("click", function(){
+                window.location.reload()
+            })
+    }) //end  boton 1 2
+
 })
 
 
